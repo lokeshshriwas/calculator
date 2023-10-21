@@ -9,8 +9,11 @@ let calculate = "";
 btns.forEach(button=>{
     button.addEventListener("click", function(e){
         let calc = e.target.textContent
-        calculate += calc
-        grandTotal.innerText = calculate
+
+        if(calculate.length < 20 ){
+            calculate += calc
+            grandTotal.innerText = calculate
+        }
     })
 })
 
