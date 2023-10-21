@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: black;
+    display: flex;
+}
+
+
+h1{
+    margin-bottom: 2rem;
+}
+.btncontainer{
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: start;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.total{
+    height: 30px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    padding-right: 10px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    background-color: black;
+    align-items: center;
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.5rem
+}
+
+.sym{
+    background-color: #464646;
+    color: white;
+}
+
+.num{
+    background-color: #212121;
+    color: white;
+}
+
+.equal{
+    background-color: orange;
+    color: white;
+}
+
+.rowFirst{
+    justify-content: start;
+    display: flex;
+}
+
+#clear{
+    width: 16.2rem;
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 15px;
+}
+
+@media (max-width: 700px) {
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btncontainer{
+        height: 40rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        margin-bottom: 1rem;
+    }
+
+    .row{
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 6rem;
+        height: 6rem;
+        border: none;
+        border-radius: 50%;
+        padding: 2rem;
+        font-size: 3rem;
+        color: white;
+      }
+
+      #clear {
+        border-radius: 10px;
+        background-color: orange;
+        font-size: 2rem;
+        width: 20rem;
+      }
+      
+      .rowFirst {
+        justify-content: space-around;
+        display: flex;
+        width: 100%;
+
+      }
+
+      h1{
+        margin-top: 1rem;
+        height: 3rem;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 3rem
+      }
+
+      .total{
+        height: 25%;
+        font-size: 4rem;
+        align-items: end;
+      }
+}
